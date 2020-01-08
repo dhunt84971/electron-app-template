@@ -1,0 +1,129 @@
+/*#region PAGE COMPONENTS */
+
+html,
+body {
+  background: var(--btnBoxTop_bgColor);
+}
+
+.btn {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--btnBoxTop_bgColor);
+  color: var(--btnBoxTop_txColor);
+  border: 3px solid var(--btnBoxTop_bgColor);
+  padding: 5px;
+  text-align:center;
+  font-weight: bold;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+  height: 30px;
+  margin: 10px;
+}
+
+.btnRight {
+    margin-right: 0px;
+}
+
+.btn:hover {
+  background-color: var(--btnBoxItem_bgColor);
+  cursor: pointer; 
+}
+
+.btnApp {
+    min-height: 40px;
+    min-width: 120px;
+}
+
+.btnFurnace {
+    min-height: 150px;
+}
+
+.btnIcon {
+  min-height: 15px;
+  min-width: 15px;
+  border: 0px;
+  background: transparent;
+}
+
+#btnAddFurnace {
+  min-height: 30px;
+}
+
+.btnEditFurnace {
+  background-image: url("images/edit_wht.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+
+.btnEditFurnace:hover {
+  background-image: url("images/edit.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+
+.btnDeleteFurnace {
+  background-image: url("images/trash_can_wht.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+
+.btnDeleteFurnace:hover {
+  background-image: url("images/trash_can.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+
+.borderSelected {
+  border-color: var(--btnSelected_borderColor) !important;
+}
+
+#lstFurnaces {
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+/*#endregion PAGE COMPONENTS */
+
+/*#region PAGE AREAS */
+.top {
+  background: var(--logo_bgColor);
+}
+
+.appNav {
+  background: var(--logo_bgColor);
+  align-items: center;
+}
+
+.appWindow {
+    background: var(--app_bgColor);
+}
+
+/*#endregion PAGE AREAS */
+
+/*#region TEST COLORS */
+.red {
+    background-color: red;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.white {
+    background-color: white;
+}
+
+
+/*#endregion TEST COLORS */
