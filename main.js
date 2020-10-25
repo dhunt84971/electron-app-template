@@ -8,7 +8,9 @@ function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({ width: 1250, height: 768,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      webviewTag: true,
+      enableRemoteModule: true
     }
   });
 
@@ -16,8 +18,8 @@ function createWindow() {
   win.loadFile("index.html");
 
   // Remove Window Menu
-  //win.setMenu(null);
-  //win.autoHideMenuBar = true;
+  win.setMenu(null);
+  win.autoHideMenuBar = true;
   win.setMenuBarVisibility(false);
   
   // Open the DevTools.
