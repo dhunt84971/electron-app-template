@@ -63,5 +63,10 @@ app.on("activate", () => {
   }
 });
 
+// This will have to be dealt with in the future as this option 
+// is being deprecated in a future version of electron.
+app.allowRendererProcessReuse = false;
+
+
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
